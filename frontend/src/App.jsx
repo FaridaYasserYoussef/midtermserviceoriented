@@ -23,7 +23,6 @@ import AllAuthors from "./pages/AllAuthors";
 import DeleteAuthor from "./pages/DeleteAuthor";
 
 
-
 const App = () =>{
   return (
     <Routes>

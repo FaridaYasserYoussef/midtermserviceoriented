@@ -4,8 +4,7 @@ const {getBooks,createBook, getBookById, deleteBook, updateBook}= require("./Con
 const {getCustomers,createCustomer, getCustomerById, deleteCustomer, updateCustomer}= require("./Controllers/customerController");
 const {getPurchases, createPurchase, getPurchaseById, deletePurchase, updatePurchase}= require("./Controllers/purchaseController");
 const {createAuthor, deleteAuthor, updateAuthor, getAuthors, getAuthorById} = require('./Controllers/authorController');
-
-
+const {createStationary, deleteStationary, updateStationary, getStationary, getStationaryById} = require('./Controllers/StationaryController');
 
 router.get('/', (req, res) => {
   res.send('Hello World!');
@@ -34,5 +33,11 @@ router.post("/authorCreate", createAuthor);
 router.post("/authors/getAuthors", getAuthorById);
 router.delete("/authors/deleteAuthor", deleteAuthor);
 router.put("/authors/updateAuthor", updateAuthor);
+
+router.get("/authors", getStationary);
+router.post("/authorCreate", createStationary);
+router.post("/authors/getAuthors", getStationaryById);
+router.delete("/authors/deleteAuthor", deleteStationary);
+router.put("/authors/updateAuthor", updateStationary);
 
 module.exports = router;
