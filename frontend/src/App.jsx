@@ -47,6 +47,7 @@ const App = () =>{
       <Route path = '/authors/edit/:id' element ={<EditAuthor/>}/>
       <Route path = '/authors' element ={<AllAuthors/>}/>
       <Route path = '/authors/delete/:id' element ={<DeleteAuthor/>}/>
+      
 
 
 
