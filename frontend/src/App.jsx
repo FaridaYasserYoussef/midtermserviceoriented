@@ -21,6 +21,11 @@ import ShowAuthor from "./pages/ShowAuthor";
 import EditAuthor from "./pages/EditAuthor";
 import AllAuthors from "./pages/AllAuthors";
 import DeleteAuthor from "./pages/DeleteAuthor";
+import CreateStationary from "./pages/CreateStationary";
+import ShowStationary from "./pages/ShowStationary";
+import EditStationary from "./pages/EditStationary";
+import AllStationary from "./pages/AllStationary";
+import DeleteStationary from "./pages/DeleteStationary";
 
 
 const App = () =>{
@@ -47,6 +52,11 @@ const App = () =>{
       <Route path = '/authors/edit/:id' element ={<EditAuthor/>}/>
       <Route path = '/authors' element ={<AllAuthors/>}/>
       <Route path = '/authors/delete/:id' element ={<DeleteAuthor/>}/>
+      <Route path = '/Stationary/create' element ={<CreateStationary/>}/>
+      <Route path = '/Stationary/details/:id' element ={<ShowStationary/>}/>
+      <Route path = '/Stationary/edit/:id' element ={<EditStationary/>}/>
+      <Route path = '/Stationary' element ={<AllStationary/>}/>
+      <Route path = '/Stationary/delete/:id' element ={<DeleteStationary/>}/>
       
 
 
