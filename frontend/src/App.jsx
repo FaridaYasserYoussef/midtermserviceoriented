@@ -11,6 +11,14 @@ import DeleteBook from "./pages/DeleteBook";
 import DeleteCustomer from "./pages/DeleteCustomer";
 import AllBooks from "./pages/AllBooks";
 import AllCustomers from "./pages/AllCustomers";
+import CreatePurchase from "./pages/CreatePurchases";
+import ShowPurchase from "./pages/ShowPurchase";
+import EditPurchase from "./pages/EditPurchase";
+import AllPurchases from "./pages/AllPurchases";
+import DeletePurchase from "./pages/Deletepurchase";
+
+
+
 
 const App = () =>{
   return (
@@ -26,6 +34,17 @@ const App = () =>{
       <Route path = '/customers/delete/:id' element ={<DeleteCustomer/>}/>
       <Route path = '/books' element ={<AllBooks/>}/>
       <Route path = '/customers' element ={<AllCustomers/>}/>
+      <Route path = '/purchases/create' element ={<CreatePurchase/>}/>
+      <Route path = '/purchases/details/:id' element ={<ShowPurchase/>}/>
+      <Route path = '/purchases/edit/:id' element ={<EditPurchase/>}/>
+      <Route path = '/purchases' element ={<AllPurchases/>}/>
+      <Route path = '/purchases/delete/:id' element ={<DeletePurchase/>}/>
+
+
+
+
+
+
 
     </Routes>
   );
