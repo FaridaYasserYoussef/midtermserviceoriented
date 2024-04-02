@@ -3,6 +3,7 @@ const router = express.Router();
 const {getBooks,createBook, getBookById, deleteBook, updateBook}= require("./Controllers/bookController");
 const {getCustomers,createCustomer, getCustomerById, deleteCustomer, updateCustomer}= require("./Controllers/customerController");
 const {getPurchases, createPurchase, getPurchaseById, deletePurchase, updatePurchase}= require("./Controllers/purchaseController");
+const {createAuthor, deleteAuthor, updateAuthor, getAuthors, getAuthorById} = require('./Controllers/authorController');
 
 
 
@@ -27,5 +28,11 @@ router.post("/purchasesCreate", createPurchase);
 router.post("/purchases/getPurchases", getPurchaseById);
 router.delete("/purchases/deletePurchases", deletePurchase);
 router.put("/purchases/updatePurchases", updatePurchase);
+
+router.get("/authors", getAuthors);
+router.post("/authorCreate", createAuthor);
+router.post("/authors/getAuthors", getAuthorById);
+router.delete("/authors/deleteAuthor", deleteAuthor);
+router.put("/authors/updateAuthor", updateAuthor);
 
 module.exports = router;
